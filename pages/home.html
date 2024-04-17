@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--barra Brasil-->
+    <meta property="creator.productor"
+      content="http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/NUMERO">
+    <!--fim barra Brasil-->
+    <title>Home</title>
+
+    <!-- Favicons -->
+    <link href="assets/img/lambda.png" rel="icon">
+    <link href="assets/img/lambda.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="../styles.css" rel="stylesheet">
+    <!-- usar ../ para pegar o arquivo a partir da pasta anterior, sai da página atual, volta uma página -->
+</head>
+
+     
+
+<body>
+    <!-- ======= Barra de Identidade Brasil ======= -->
+               <div id="barra-brasil" style="background:#7F7F7F; height: 20px; padding:0 0 0 10px;display:block;">
+            <ul id="menu-barra-temp" style="list-style:none;">
+              <li style="display:inline; float:left;padding-right:10px; margin-right:10px; border-right:1px solid #EDEDED">
+                  <a href="http://brasil.gov.br" style="font-family:sans,sans-serif; text-decoration:none; color:white;">Portal do Governo Brasileiro</a>
+              </li>
+              <li>
+                 <a style="font-family:sans,sans-serif; text-decoration:none; color:white;" href="http://epwg.governoeletronico.gov.br/barra/atualize.html">Atualize sua Barra de Governo</a>
+              </li>
+            </ul>
+          </div>
+    <!-- ======= Header ======= -->
+    <header id="cabeçalho">
+           
+            
+
+        <nav id="navBar">
+            <a id="linkLambda" href="pages/home.html">
+                <img id="lambda" src="../assets/lambda.png" alt="">
+                <h1 id="titulo-logo">Lambda</h1>
+            </a>
+        </nav>
+    </header>
+
+    <!-- ======= cabeçalho ======= -->
+    <div id="viewCabeçalho">
+
+        <div id="box-portal-titulo" class="box-row">
+            <img id="imagem-cabeçalho" src="../assets/logo_cbiotec.png" alt="imagem ilustrativa">
+            <div id="titulos-cabeçalho">
+                <h1 id="titulo-portal"> Laboratório Multiusuário de Bioinformática e Análise de Dados</h1>
+                <h2 id="subtitulo-portal"> Centro de Biotecnologia - Universidade Federal da Paraíba </h2>
+            </div>
+        </div>
+
+        <div id="Informações">
+            <button id="sobre-nos">
+                <a href="sobre_nos.html">Sobre Nós</a>
+            </button>
+            
+        </div>
+    </div>
+    <!-- ======= CONTEUDO ======= -->
+
+    <div id="Box-Conteudo" class="box-row">
+        <!-- ======= MENU ======= -->
+        <aside id="menu">
+            <!-- Breadcrumbs -->
+            <div id="breadcrumbs">
+                <a href="home.html">Página Incial</a>
+            </div>
+
+            <div class="box-butão" id="projetos-btn">
+                <a href="institucional.html"> <button class="botão-menu" onclick="mostrarProjetos()">Institucional</button></a>
+                <button id="arrow-btn3" onclick="toggleInstitucional()">⇲</button>
+            </div>
+
+            <div id="institucional" class="hidden">
+                <a href="mapa.html"><button class="botão-projeto">Mapas</button></a>
+                <a href="endereco.html"><button class="botão-projeto">Endereços</button></a>
+                <a href="solicitacoes.html"><button class="botão-projeto">Solicitações</button></a>
+               
+            </div>
+
+            <div class="box-butão" id="projetos-btn">
+                <a href="transparencia.html"> <button class="botão-menu" onclick="mostrarProjetos()">Transparência</button></a>
+                <button id="arrow-btn2" onclick="toggleTransparencia()">⇲</button>
+            </div>
+
+            <div id="transparencia" class="hidden">
+                <a href="patrimonio.html"><button class="botão-projeto">Patrimônio</button></a>
+                <a href="financeiro.html"><button class="botão-projeto">Financeiro</button></a>
+            </div>
+
+            <div class="box-butão" id="projetos-btn">
+                <a href="pesquisas.html"> <button class="botão-menu" onclick="mostrarProjetos()">Pesquisas</button></a>
+                <button id="arrow-btn1" onclick="togglePesquisas()">⇲</button>
+            </div>
+
+            <div id="pesquisas" class="hidden">
+                <a href="pesquis_finalizadas.html"><button class="botão-projeto">Finalizados</button></a>
+                <a href="pesquisas_em_andamento.html"><button class="botão-projeto">Em Andamento</button></a>
+            </div>
+
+            
+            <div class="box-butão">
+                <a href="producoes.html"> <!--chamar uma página-->
+                    <button class="botão-menu">Produções</button>
+                </a>
+                <a href="artigos.html"><button class="botão-projeto">Artigos</button></a>
+                <a href="projetos.html"><button class="botão-projeto">Projetos</button></a>
+                <a href="programas.html"><button class="botão-projeto">Programas</button></a>
+            </div>         
+                  
+        </aside>
+
+        <!-- ======= COTNTEUDO DAS PAGINAS ======= -->
+        <main id="main" class="main">
+            <h1 id="titulo-noticias">Ultimas Noticias</h1>
+                <a class="todasnoticias" href="noticias.html">Todas as Notícias</a>
+            
+            <section class="container">
+            
+                <section class="noticias-inicio">
+                    <article class="post-generico">
+                        <a href="link-da-noticia1">
+                            <img src="../assets/download (1).jpeg" alt="Imagem 1">
+                        </a>
+                        <h2 class="titulo-post">
+                            <a href="link-da-noticia1">Noticia Recente1</a>
+                        </h2>
+                        <p class="descricao-post">
+                            <a href="link-da-noticia1">Breve descrição da noticia Breve descrição da noticia Breve descrição da noticia Breve descrição da noticia Breve descrição da noticia Breve descrição da noticia</a>
+                        </P>
+                    </article>  
+                </section>
+                
+                <section class="noticias-inicio">
+                    <article class="post-generico">
+                        <a href="link-da-noticia2">
+                            <img src="../assets/download (1).jpeg" alt="Imagem 1">
+                        </a>
+                        <h2 class="titulo-post">
+                            <a href="link-da-noticia2">Noticia Recente2</a>
+                        </h2>
+                        <p class="descricao-post">
+                            <a href="link-da-noticia2">Breve descrição da noticia Breve descrição da noticia Breve descrição da noticia Breve descrição da noticia Breve descrição da noticia Breve descrição da noticia</a>
+                        </P>
+                    </article>  
+                </section>
+
+                <section class="noticias-inicio">
+                    <article class="post-generico">
+                        <a href="link-da-noticia3">
+                            <img src="../assets/download (1).jpeg" alt="Imagem 1">
+                        </a>
+                        <h2 class="titulo-post">
+                            <a href="link-da-noticia3">Noticia Recente3</a>
+                        </h2>
+                        <p class="descricao-post">
+                            <a href="link-da-noticia3">Breve descrição da noticia Breve descrição da noticia Breve descrição da noticia Breve descrição da noticia Breve descrição da noticia Breve descrição da noticia</a>
+                        </P>
+                    </article>  
+                </section>
+            </section>
+            
+            
+
+            <h1 id="titulo-conteudo"> Anúncios, Informações, principais conteúdo </h1>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed viverra erat non odio ultricies, sed
+                tristique massa
+                iaculis. Vivamus vehicula lectus a libero dictum, nec consectetur felis tristique. Maecenas scelerisque
+                sapien at
+                gravida sodales. Ut in libero id lorem mollis elementum. Fusce in massa vitae ligula vehicula hendrerit.
+                Aliquam euismod
+                elit at nunc aliquet, in tincidunt velit sagittis. Nulla facilisi. Nulla nec nulla eu enim placerat
+                cursus. Ut
+                scelerisque lorem et mi vehicula, non convallis nunc rutrum. Donec nec dui vitae felis eleifend feugiat
+                id ac ante.</p>
+
+        </main>
+    </div>
+
+    </div>
+    <!-- ======= RODAPÉ ======= -->
+    <footer>
+        <nav>
+            <h1>© Copyright Lambda. All Rights Reserved</h1>
+            <h2>Designed by Jheison Francelino</h2>
+        </nav>
+        <div id="footer-brasil"></div> <!--Barra Brasil-->
+
+
+    </footer>
+    <script src="../script.js" defer></script>
+    <script defer="defer" src="../barra.js" type="text/javascript"></script> <!--Barra Brasil-->
+    
+</body>
+
+</html>

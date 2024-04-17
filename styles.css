@@ -1,0 +1,375 @@
+
+body{
+    background-color: #EFF1FF;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+a:hover {
+    color: rgb(29, 29, 124);
+}
+
+a:active {
+    color: rgb(148, 78, 78);
+}
+
+/*----------- Barra de Identidade ------------------*/
+/* Barra Brasil */
+#barra-identidade {
+    background-color: #f2f2f2; /* Cor de fundo cinza claro */
+    padding: 10px 20px; /* Espaçamento interno */
+}
+
+#barra-brasil {
+    display: flex;
+    align-items: center; /* Alinhar os itens verticalmente */
+    justify-content: space-between; /* Distribuir os itens igualmente */
+    width: 100%;
+    height: 10px;
+}
+
+.brasil-bandeira {
+    display: flex;
+    align-items: center;
+}
+
+.brasil-bandeira a {
+    margin-right: 20px; /* Espaçamento entre o nome "Brasil" e a lista de links */
+    font-size: 18px; /* Tamanho da fonte */
+    color: #333; /* Cor do texto cinza escuro */
+}
+
+.nav-barra-brasil {
+    display: flex;
+    align-items: center;
+}
+
+.list-item {
+    margin-right: 20px; /* Espaçamento entre os itens da lista */
+    border-right: 1px solid #6a6d70; 
+}
+
+.link-vlibras img {
+    width: 25px; /* Tamanho do ícone da VLibras */
+    height: auto;
+    margin-right: 10px; /* Espaçamento entre o ícone e o texto */
+}
+
+#lista-barra-brasil {
+    display: flex;
+    
+}
+
+
+
+/* ----------Configuração do Header-------------- */
+
+#cabeçalho {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: white; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+#lambda{
+    width: 5vh;
+    padding-right: 1vh;
+}
+#titulo-logo{
+    font-size: 35px;
+    font-family: "open_sansextrabold", Arial, Helvetica, sans-serif;
+}
+#navBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+}
+#linkLambda {
+    display: flex;
+    align-items: center;
+    text-decoration: none; 
+    color: #000000; 
+}
+/* -----------------Configuração do Conteudo-------------- */
+#viewCabeçalho {
+    display: flex;
+    align-items: center;
+    padding-top: 18vh;
+    margin-left: 6vh;
+    margin-right: 6vh;
+    border-bottom: 1px solid #9CCFFF; 
+}
+/* -----------------Cabeçalho-------------- */
+.box-row{
+    display:flex;
+    flex-direction:row;
+}
+#box-portal-titulo{
+    align-items: center;
+}
+#imagem-cabeçalho {
+    width: auto; 
+    height: 12vh;
+}
+#titulos-cabeçalho{
+    display:flex;
+    flex-direction:column;
+    margin-left:4vh;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+
+    
+}
+#titulo-portal{
+    margin: 5px 0; 
+    font-family: "open_sansextrabold", Arial, Helvetica, sans-serif;
+    font-size: 30px; 
+}
+#subtitulo-portal{
+    margin: 0; 
+    font-size: 20px;
+    font-family: "open_sansextrabold", Arial, Helvetica, sans-serif;
+}
+/* ----------------informações-------------- */
+#Informações {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-left: 14vh;
+    padding-top: 5vh;
+}
+
+#sobre-nos {
+    margin-bottom: 5vh;
+    width: 20vh;
+    
+}
+
+/* ----------Configuração do Conteudo-------------- */
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.todasnoticias {
+    background-color: #ced5dbcc;
+    text-align: left;
+    font-family: "open_sansregular", Arial, Helvetica, sans-serif;
+    font-size: small;
+    font-weight: 400; 
+    width: 150vh;
+    cursor: pointer;
+    border-bottom: 1px solid #a399997c;
+    color: #000000;
+}
+
+.todasnoticias:hover {
+    color: blue;
+}
+
+.todasnoticias:active {
+    color: red;
+}
+
+#Box-Conteudo{
+    margin-bottom: 30vh;
+}
+
+#menu{
+    display: flex;
+    flex-direction: column;
+    padding-left: 20vh;
+    margin-top: 5vh;
+    font-size: 10px;
+    font-family: "open_sansregular", Arial, Helvetica, sans-serif;
+}
+
+.box-butão{
+    width: 20vh;
+    border-top: 3px solid #0a1118;
+    margin-top: 4vh;
+    align-items: center;
+    background-color: rgba(108, 216, 108, 0.438);
+    height: 3vh;
+
+}
+
+.botão-projeto {
+    color: #000000;
+}
+
+.botão-projeto:hover {
+    color: blue;
+}
+
+.botão-projeto:active {
+    color: red;
+}
+
+.botão-menu{
+    font-family: "open_sansregular", Arial, Helvetica, sans-serif;
+    width: auto;
+    border: none;
+    font-size: 15px;
+    background-color: transparent;
+    padding: 0;
+    cursor: pointer; /* para ficar a mãozinha quando passar por botão */
+    
+}
+
+/*-- hover --*/
+
+/* Para alterar a cor quando o cursor passar sobre o botão */
+.botão-menu:hover {
+    color: blue;
+    /* Altere a cor conforme desejado */
+}
+
+/* Para alterar a cor quando o botão for pressionado */
+.botão-menu:active {
+    color: red;
+    /* Altere a cor conforme desejado */
+}
+
+#arrow-btn1, #arrow-btn2, #arrow-btn3 {
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+.botão-projeto {
+    display: block;
+    /* Alterado para exibir os botões em uma coluna /
+    margin-bottom: 5px; / Espaçamento entre os botões */
+    background: none;
+    border: none;
+    margin-top: 2vh;
+}
+
+.hidden {
+    display: none;
+}
+
+/* ----------Configuração da main-------------- */
+
+#main{
+    display: flex;
+    flex-direction: column;
+    padding-left:10vh;
+    padding-right: 10vh;
+    padding-top: 5vh;
+    overflow: hidden;
+}
+
+#titulo-conteudo {
+    font-family: "open_sansbold", Arial, Helvetica, sans-serif;
+}
+
+#titulo-noticias {
+    font-size: 20px;
+    font-family: "open_sansbold", Arial, Helvetica, sans-serif;
+}
+
+
+
+/* ----------Configuração do Rodapé-------------- */
+
+footer {
+    width: 100%;
+    background-color: #486AE4;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: "open_sansregular", Arial, Helvetica, sans-serif;
+    font-size: 10px;
+}
+
+#footer-brasil {
+    background: none repeat scroll 0% 0% #0042b1;
+    padding: 1em 0px;
+    max-width: 100%;
+ }
+
+
+/*-----------Container-------------*/
+
+.container {
+    display: flex;
+    background-color: #ada4a4cc;
+    text-align: justify;
+    font-family: "open_sansregular", Arial, Helvetica, sans-serif;
+    font-size: small;
+    font-weight: 400; 
+    width: 150vh; /* Alteração: definindo a largura para ocupar toda a largura disponível */   
+    height: 55vh; 
+        
+}
+
+.noticias-inicio {
+    flex-grow: 1; /* Alteração: faz cada bloco de notícias expandir igualmente */
+    padding: 10px; /* Alteração: ajustando o espaçamento dentro do bloco de notícias */
+    border: 1px solid #a399997c; /* Alteração: adicionando uma borda à direita de cada bloco */
+    background-color: rgba(104, 132, 133, 0.815);
+}
+
+.noticias-inicio:last-child {
+    border-right: none; /* Alteração: removendo a borda direita do último bloco de notícias */
+}
+
+.noticias-inicio:hover {
+    transform: scale(1.03); /* Aumenta em 5% o tamanho do elemento */
+    transition: transform 0.3s ease; /* Adiciona uma transição suave */
+}
+
+
+
+
+/* ----------carrosel-------------- 
+
+.carousel-container {
+    width: 150vh;
+    height: 60vh;
+    overflow: hidden;   
+    position: relative;
+  }
+  
+  .carousel {
+    display: flex; 
+    transition: transform 0.5s ease; 
+  }
+  
+  .carousel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+  }
+  
+  .butão-carrossel {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer; 
+  }
+  
+  #prevBtn {
+    left: 0; 
+  }
+  
+  #nextBtn {
+    right: 0; 
+  }
+  */
+  
